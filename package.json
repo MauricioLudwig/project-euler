@@ -1,0 +1,31 @@
+{
+  "name": "project-euler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/app.ts",
+    "dev": "ts-node-dev --respawn ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioLudwig/project-euler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioLudwig/project-euler/issues"
+  },
+  "homepage": "https://github.com/MauricioLudwig/project-euler#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.25",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.54",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
