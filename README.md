@@ -1,6 +1,6 @@
 # Project Euler
 
-My solutions for the Project Euler challenges.
+My solutions for the Project Euler challenges. More info at https://projecteuler.net/.
 
 ## About
 
