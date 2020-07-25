@@ -12,6 +12,6 @@ My solutions for the Project Euler challenges. More info at https://projecteuler
 
 I will only post my solutions for the first 100 problems as per their policy (of not sharing the solutions past the 100th problem). 
 
-### Tech stack
+## Tech stack
 
 Node.js + TypeScript
