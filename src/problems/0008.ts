@@ -1,7 +1,7 @@
 import { getAsSingleLine } from '../input';
 import { success, end } from '../utils/logger';
 
-export default () => {
+export default (): void => {
   const input = getAsSingleLine('0008.txt')
     .split('')
     .filter(removeSpecialChars)
@@ -13,7 +13,7 @@ export default () => {
   for (let i = 0; i <= input.length - numOfDigits; i++) {
     const sum = input
       .slice(i, i + numOfDigits)
-      .reduce((acc, curr) => acc * curr, 1);
+      .reduce((acc, curr): number => acc * curr, 1);
 
     if (sum > maxSum) {
       maxSum = sum;
@@ -24,5 +24,5 @@ export default () => {
   end();
 };
 
-const removeSpecialChars = (str: string) =>
+const removeSpecialChars = (str: string): boolean =>
   !['\n', '\r'].some((x) => str === x);

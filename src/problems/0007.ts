@@ -1,7 +1,7 @@
 import { success, end } from '../utils/logger';
 import { isPrimeNumber } from '../utils/math';
 
-export default () => {
+export default (): void => {
   const primeNumbers = [2, 3, 5];
   let n = 6;
 

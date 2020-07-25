@@ -20,7 +20,7 @@ import { success, end } from '../utils/logger';
 
 */
 
-export default () => {
+export default (): void => {
   for (let a = 1; a < 1000; a++) {
     const b = calcB(a);
     const c = 1000 - a - b;
@@ -34,7 +34,7 @@ export default () => {
   end();
 };
 
-const calcB = (n: number) => (500000 - 1000 * n) / (1000 - n);
+const calcB = (n: number): number => (500000 - 1000 * n) / (1000 - n);
 
-const verifyNumbers = (...numbers: number[]) =>
+const verifyNumbers = (...numbers: number[]): boolean =>
   numbers.every((n) => Number.isInteger(n) && n > 0);

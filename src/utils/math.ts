@@ -1,4 +1,4 @@
-export const isPrimeNumber = (n: number, primeNumbers: number[]) => {
+export const isPrimeNumber = (n: number, primeNumbers: number[]): boolean => {
   const isDivisibleByTwo = n % 2 === 0;
   const isDivisibleByFive = n % 5 === 0;
   const isDivisibleByPrimeNumbers = primeNumbers.some((o) => n % o === 0);
@@ -7,7 +7,7 @@ export const isPrimeNumber = (n: number, primeNumbers: number[]) => {
     .toString()
     .split('')
     .map(Number)
-    .reduce((acc, curr) => acc + curr, 0);
+    .reduce((acc, curr): number => acc + curr, 0);
   const isDivisibleByThree = sumOfDigits % 3 === 0;
 
   return !(
@@ -16,4 +16,9 @@ export const isPrimeNumber = (n: number, primeNumbers: number[]) => {
     isDivisibleByFive ||
     isDivisibleByPrimeNumbers
   );
+};
+
+export const isPalindrome = (n: number): boolean => {
+  const reverse = n.toString().split('').reverse().join('');
+  return n.toString() === reverse;
 };

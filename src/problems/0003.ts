@@ -1,6 +1,6 @@
 import { success, end } from '../utils/logger';
 
-export default () => {
+export default (): void => {
   let num = 600851475143;
   const primeNumbers: number[] = [];
   let loop = true;
@@ -25,7 +25,7 @@ export default () => {
     primeNumbers.push(divide);
   }
 
-  const [largestFactor] = primeNumbers.sort((a, b) => b - a);
+  const [largestFactor] = primeNumbers.sort((a, b): number => b - a);
 
   success(`Answer: ${largestFactor}`);
   end();

@@ -1,6 +1,6 @@
 import { success, end } from '../utils/logger';
 
-export default () => {
+export default (): void => {
   let num = 1;
 
   while (true) {
@@ -15,7 +15,7 @@ export default () => {
   end();
 };
 
-const isEvenlyDivisble = (num: number) => {
+const isEvenlyDivisble = (num: number): boolean => {
   let isEven = true;
 
   for (let i = 1; i <= 20; i++) {

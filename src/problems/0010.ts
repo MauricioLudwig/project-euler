@@ -2,7 +2,7 @@ import { performance } from 'perf_hooks';
 import { success, end, logPerformance } from '../utils/logger';
 import { isPrimeNumber } from '../utils/math';
 
-export default () => {
+export default (): void => {
   const primeNumbers = [2, 3, 5];
   let n = 6;
 
@@ -20,7 +20,7 @@ export default () => {
 
   logPerformance(t2, t1);
 
-  const sum = primeNumbers.reduce((acc, curr) => acc + curr, 0);
+  const sum = primeNumbers.reduce((acc, curr): number => acc + curr, 0);
   success(`Answer: ${sum}`);
 
   end();

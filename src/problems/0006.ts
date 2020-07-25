@@ -1,6 +1,6 @@
 import { success, end } from '../utils/logger';
 
-export default () => {
+export default (): void => {
   let addSum = 0;
   let sqSum = 0;
 

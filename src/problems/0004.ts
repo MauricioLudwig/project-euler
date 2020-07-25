@@ -1,6 +1,7 @@
 import { success, end } from '../utils/logger';
+import { isPalindrome } from '../utils/math';
 
-export default () => {
+export default (): void => {
   const palindromes: number[] = [];
 
   for (let i = 999; i > 99; i--) {
@@ -13,12 +14,7 @@ export default () => {
     }
   }
 
-  const [largestPalindrome] = palindromes.sort((a, b) => b - a);
+  const [largestPalindrome] = palindromes.sort((a, b): number => b - a);
   success(`Answer: ${largestPalindrome}`);
   end();
-};
-
-const isPalindrome = (num: number) => {
-  const reverse = num.toString().split('').reverse().join('');
-  return num.toString() === reverse;
 };

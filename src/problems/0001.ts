@@ -1,6 +1,6 @@
 import { success, end } from '../utils/logger';
 
-export default () => {
+export default (): void => {
   const maxNum = 1000;
   let sum = 0;
 
@@ -10,6 +10,6 @@ export default () => {
     }
   }
 
-  success(`Sum: ${sum}`);
+  success(`Answer: ${sum}`);
   end();
 };
