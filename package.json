@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node ./src/app.ts",
     "dev": "ts-node-dev --respawn ./src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/MauricioLudwig/project-euler#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.10",
     "@types/node": "^14.0.25",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.54",
     "typescript": "^3.9.7"
