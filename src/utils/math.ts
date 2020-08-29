@@ -5,7 +5,7 @@ export const isPrimeNumber = (n: number, primeNumbers: number[]): boolean => {
 
   const sumOfDigits = n
     .toString()
-    .split('')
+    .split("")
     .map(Number)
     .reduce((acc, curr): number => acc + curr, 0);
   const isDivisibleByThree = sumOfDigits % 3 === 0;
@@ -19,7 +19,7 @@ export const isPrimeNumber = (n: number, primeNumbers: number[]): boolean => {
 };
 
 export const isPalindrome = (n: number): boolean => {
-  const reverse = n.toString().split('').reverse().join('');
+  const reverse = n.toString().split("").reverse().join("");
   return n.toString() === reverse;
 };
 
@@ -27,4 +27,4 @@ export const arraySum = (arr: number[]): number =>
   arr.reduce((acc, curr): number => acc + curr, 0);
 
 export const numberToArr = (n: number): number[] =>
-  n.toString().split('').map(Number);
+  n.toString().split("").map(Number);
