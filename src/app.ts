@@ -1,10 +1,10 @@
-import { primary } from './utils/logger';
-import problem from './problems/0029';
+import { primary } from "./utils/logger";
+import problem from "./problems/0017";
 
-primary('app.ts is running!');
+primary("app.ts is running!");
 
 (async () => {
   await problem();
 })();
 
-primary('app.ts finished execution!');
+primary("app.ts finished execution!");
