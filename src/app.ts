@@ -1,5 +1,5 @@
 import { primary } from "./utils/logger";
-import problem from "./problems/0018";
+import problem from "./problems/0047";
 
 primary("app.ts is running!");
 
